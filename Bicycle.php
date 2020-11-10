@@ -7,7 +7,7 @@ require_once 'LightableInterface.php';
 class Bicycle extends Vehicle implements LightableInterface
 {
 
-    public function switchOn(): int
+    public function switchOn(): bool
     {
         if (getCurrentSpeed() > 10) {
             return true;
@@ -16,7 +16,7 @@ class Bicycle extends Vehicle implements LightableInterface
         }
     }
 
-    public function switchOff(): int
+    public function switchOff(): bool
     {
         return false;
     }

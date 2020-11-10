@@ -6,6 +6,7 @@ require_once 'Truck.php';
 require_once 'Motorway.php';
 require_once 'ResidentialWay.php';
 require_once 'PedestrianWay.php';
+require_once 'LightableInterface.php';
 
 var_dump(Car::ALLOWED_ENERGIES);
 
@@ -29,6 +30,9 @@ echo $cars->start();
 var_dump($cars);
 echo $cars->start();
 var_dump($cars);
+
+echo $cars->switchOn()."<br>";
+echo $cars->switchOff();
 
 //echo $cars->getParkBrake();//
 
